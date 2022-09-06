@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      Preview
+      <main className="product" role="main">
+        <img src='./image-product-desktop.jpg' alt="Gabrielle Essence Eau De Parfum"/>
+        <section>
+          <p className="product-category">
+          Perfume
+          </p>
 
-      Gabrielle Essence Eau De Parfum
+          <h1 className="product-title">
+          Gabrielle Essence Eau De Parfum
+          </h1>
 
-      A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-      Perfumer-Creator for the House of CHANEL.
 
-      $149.99
-      $169.99
+          <p className="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+          </p>
+            
 
-      Add to Cart
+          <p className="product-price">
+          <p className="sale">$149.99</p>
+          <p className="msrp">$169.99</p>
+          </p>
 
-      <div class="attribution">
+          <button>
+          Add to Cart
+          </button>
+        </section>
+      </main>
+
+      <footer role="contentinfo" class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
+        Coded by <a href="https://github.com.dj-drakos">DJ Drakos</a>.
+      </footer>
     </div>
   );
 }

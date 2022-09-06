@@ -1,0 +1,39 @@
+.App {
+
+}
+
+.product {
+
+}
+
+.product-category {
+
+}
+
+.product-title {
+
+}
+
+.product-description {
+
+}
+
+.product-price {
+
+}
+
+.product-price:first-child {
+
+}
+
+.product-price:last-child {
+
+}
+
+.attribution { 
+  font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+}
