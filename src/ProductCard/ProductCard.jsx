@@ -1,33 +1,28 @@
 import './ProductCard.css'
 
-export default function ProductCard() {
+export default function ProductCard({data}) {
+  const {category, description, name, priceMSRP, priceSale, productImageURLDesktop, productImageURLMobile, qtyOnHand} = data;
+
   return (
     <main className="card" role="main">
         <picture>
-          <source media="screen and (max-width: 445px)" srcset="./image-product-mobile.jpg" />
-          <img src='./image-product-desktop.jpg' alt="Gabrielle Essence Eau De Parfum"/>
+          <source media="screen and (max-width: 445px)" srcSet={productImageURLMobile} />
+          <img src={productImageURLDesktop} alt={name}/>
         </picture>
 
         <section className='product-details'>
-          <p className="category">
-          Perfume
-          </p>
+          <p className="category">{category}</p>
 
-          <h1 className="name">
-          Gabrielle Essence Eau De Parfum
-          </h1>
+          <h1 className="name">{name}</h1>
 
-          <p className="description">
-          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-          Perfumer-Creator for the House of CHANEL.
-          </p>
+          <p className="description">{description}</p>
 
           <p className="price">
-            <span className="sale">$149.99</span>
-            <span className="msrp">$169.99</span>
+            <span className="sale">{priceSale}</span>
+            <span className="msrp">{priceMSRP}</span>
           </p>
 
-          <button>
+          <button  disabled={qtyOnHand <= 0}>
             <img src='./icon-cart.svg' alt='Cart Icon' />
           Add to Cart
           </button>

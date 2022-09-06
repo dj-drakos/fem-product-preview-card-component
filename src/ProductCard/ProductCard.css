@@ -8,8 +8,15 @@
 }
 
 picture {
-display: flex;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
 }
+
+picture > img { 
+  height: 100%;
+}
+
 
 .product-details {
   padding: 32px;
@@ -76,12 +83,20 @@ button:active {
   background: hsl(156, 59%, 25%);
 }
 
+button:disabled {
+  background: hsl(228, 12%, 48%);
+}
+
   @media only screen and (max-width: 445px) {
     .card {
-      grid-template: 240px 370px / 343px;
+      grid-template: 240px 370px / 344px;
     }
     
     .details {
-      padding: 25px;
+      padding: 24px;
+    }
+    
+    picture > img { 
+      width: 100%;
     }
   }
