@@ -18,6 +18,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  color: hsl(228, 12%, 48%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: hsl(30, 38%, 92%);
