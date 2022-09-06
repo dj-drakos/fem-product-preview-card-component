@@ -4,7 +4,10 @@ function App() {
   return (
     <div className="App">
       <main className="product" role="main">
-        <img src='./image-product-desktop.jpg' alt="Gabrielle Essence Eau De Parfum"/>
+        <picture>
+          <source media="screen and (max-width: 445px)" srcset="./image-product-mobile.jpg" />
+          <img src='./image-product-desktop.jpg' alt="Gabrielle Essence Eau De Parfum"/>
+        </picture>
 
         <section className='product-details'>
           <p className="product-category">

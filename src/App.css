@@ -6,15 +6,17 @@
 }
 
 .product {
-  display: flex;
-  flex-direction: row;
-  height: 450px;
-  width: 600px;
+  display: grid;
+  grid-template: 450px / 300px 300px;
   background: hsl(0, 0%, 100%);
   border-radius: 10px;
   overflow: hidden;
-
 }
+
+picture {
+display: flex;
+}
+
 
 .product-details {
   padding: 32px;
@@ -90,3 +92,19 @@ button:active {
 .attribution a { 
   color: hsl(228, 45%, 44%);
 }
+
+  @media only screen and (max-width: 445px) {
+    .product {
+      grid-template: 240px 370px / 343px;
+    }
+    
+    .product-details {
+      padding: 25px;
+    }
+    
+    /* picture > * {
+      height: auto; 
+      width: 100%; 
+      object-fit: cover;
+    } */
+  }
