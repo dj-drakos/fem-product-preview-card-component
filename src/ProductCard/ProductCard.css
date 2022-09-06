@@ -18,7 +18,7 @@ picture > img {
 }
 
 
-.product-details {
+.details {
   padding: 32px;
   display: grid;
   align-content: space-between;
@@ -93,7 +93,7 @@ button:disabled {
     }
     
     .details {
-      padding: 24px;
+      padding: 25px;
     }
     
     picture > img { 

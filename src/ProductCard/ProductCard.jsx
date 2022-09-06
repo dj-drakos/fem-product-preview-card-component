@@ -10,7 +10,7 @@ export default function ProductCard({data}) {
           <img src={productImageURLDesktop} alt={name}/>
         </picture>
 
-        <section className='product-details'>
+        <section className='details'>
           <p className="category">{category}</p>
 
           <h1 className="name">{name}</h1>
