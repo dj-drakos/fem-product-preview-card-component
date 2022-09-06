@@ -64,6 +64,10 @@
 
 button  {
   height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
@@ -73,6 +77,9 @@ button  {
   border-radius: 8px;
 }
 
+button:active {
+  background: hsl(156, 59%, 25%);
+}
 
 .attribution { 
   padding: 3px;

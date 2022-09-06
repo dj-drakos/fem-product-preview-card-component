@@ -28,6 +28,7 @@ function App() {
           </p>
 
           <button>
+            <img src='./icon-cart.svg' alt='Cart Icon' />
           Add to Cart
           </button>
         </section>
