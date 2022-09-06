@@ -1,4 +1,5 @@
 import './ProductCard.css'
+import Button from '../Button/Button'
 
 export default function ProductCard({data}) {
   const {category, description, name, priceMSRP, priceSale, productImageURLDesktop, productImageURLMobile, qtyOnHand} = data;
@@ -22,10 +23,7 @@ export default function ProductCard({data}) {
             <span className="msrp">{priceMSRP}</span>
           </p>
 
-          <button  disabled={qtyOnHand <= 0}>
-            <img src='./icon-cart.svg' alt='Cart Icon' />
-          Add to Cart
-          </button>
+          <Button qtyOnHand={qtyOnHand} />
         </section>
       </main>
   )

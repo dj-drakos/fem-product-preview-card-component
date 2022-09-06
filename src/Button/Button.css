@@ -1,0 +1,22 @@
+button  {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  color:hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+}
+
+button:active {
+  background: hsl(156, 59%, 25%);
+}
+
+button:disabled {
+  background: hsl(228, 12%, 48%);
+}
