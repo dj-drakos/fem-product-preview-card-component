@@ -1,6 +1,7 @@
 import './App.css';
+import Footer from './Footer/Footer.js'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <main className="product" role="main">
@@ -37,12 +38,10 @@ function App() {
         </section>
       </main>
 
-      <footer role="contentinfo" class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com.dj-drakos">DJ Drakos</a>.
-      </footer>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+
+

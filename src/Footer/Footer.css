@@ -1,0 +1,13 @@
+.attribution { 
+  padding: 3px;
+  font-size: 10px; 
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(158, 36%, 37%);
+}
+
+.attribution a:active { 
+  color: hsl(156, 59%, 25%);
+}
