@@ -4,17 +4,27 @@
   box-sizing: border-box;
 }
 
-html, body, .App, #root {
+html, body, #root {
   height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: hsl(30, 38%, 92%);
+}
+
+
+p, h1 {
+  margin: 0px;
+  padding: 0px;
 }

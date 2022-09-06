@@ -1,13 +1,28 @@
 .App {
-
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .product {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  width: 600px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
 
 }
 
-.product-category {
+.product-details {
+  padding: 32px;
+  display: grid;
+  align-items: space-between;
+}
 
+.product-category {
 }
 
 .product-title {
@@ -30,8 +45,11 @@
 
 }
 
+
 .attribution { 
-  font-size: 11px; text-align: center;
+  padding: 3px;
+  font-size: 10px; 
+  text-align: center;
 }
 
 .attribution a { 

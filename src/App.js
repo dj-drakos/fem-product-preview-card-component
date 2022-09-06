@@ -5,7 +5,8 @@ function App() {
     <div className="App">
       <main className="product" role="main">
         <img src='./image-product-desktop.jpg' alt="Gabrielle Essence Eau De Parfum"/>
-        <section>
+        
+        <section className='product-details'>
           <p className="product-category">
           Perfume
           </p>
@@ -22,8 +23,8 @@ function App() {
             
 
           <p className="product-price">
-          <p className="sale">$149.99</p>
-          <p className="msrp">$169.99</p>
+          <span className="sale">$149.99</span>
+          <span className="msrp">$169.99</span>
           </p>
 
           <button>
