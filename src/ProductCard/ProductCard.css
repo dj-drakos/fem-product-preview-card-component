@@ -1,0 +1,79 @@
+
+.card {
+  display: grid;
+  grid-template: 450px / 300px 300px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+picture {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+picture > img { 
+  height: 100%;
+}
+
+
+.details {
+  padding: 32px;
+  display: grid;
+  align-content: space-between;
+}
+
+.category {
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+.name {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: hsl(212, 21%, 14%);
+}
+
+.description {
+  line-height: 23px;
+  align-items:flex-start;
+}
+
+.price {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.price > span:first-child {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+}
+
+.price > span:nth-child(2) {
+  font-size: 12px;
+  text-decoration: line-through;
+  padding: auto 0px;
+}
+
+  @media only screen and (max-width: 445px) {
+    .card {
+      grid-template: 240px 370px / 344px;
+    }
+    
+    .details {
+      padding: 25px;
+    }
+    
+    picture > img { 
+      width: 100%;
+    }
+  }
