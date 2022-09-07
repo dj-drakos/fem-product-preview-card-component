@@ -19,8 +19,8 @@ export default function ProductCard({data}) {
           <p className="description">{description}</p>
 
           <p className="price">
-            <span className="sale">{priceSale}</span>
-            <span className="msrp">{priceMSRP}</span>
+            {priceSale !== undefined && <span>{priceSale}</span>}
+            <span>{priceMSRP}</span>
           </p>
 
           <Button qtyOnHand={qtyOnHand} />

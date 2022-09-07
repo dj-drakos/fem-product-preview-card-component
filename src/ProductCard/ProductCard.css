@@ -58,7 +58,7 @@ picture > img {
   color: hsl(158, 36%, 37%);
 }
 
-.price > span:last-child {
+.price > span:nth-child(2) {
   font-size: 12px;
   text-decoration: line-through;
   padding: auto 0px;
