@@ -5,7 +5,7 @@ export default function ProductCard({data}) {
   const {category, description, name, priceMSRP, priceSale, productImageURLDesktop, productImageURLMobile, qtyOnHand} = data;
 
   return (
-    <main className="card" role="main">
+    <div className="card" role="main">
         <picture>
           <source media="screen and (max-width: 445px)" srcSet={productImageURLMobile} />
           <img src={productImageURLDesktop} alt={name}/>
@@ -25,6 +25,6 @@ export default function ProductCard({data}) {
 
           <Button qtyOnHand={qtyOnHand} />
         </section>
-      </main>
+      </div>
   )
 }
